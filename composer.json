@@ -18,10 +18,16 @@
         "phpunit/phpunit": "^11.0.1"
     },
     "autoload": {
+        "files": [
+            "domains/car-subscription/helper.php",
+            "domains/shared/helper.php"
+        ],
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "CarSubscription\\": "domains/car-subscription/",
+            "Shared\\": "domains/shared/"
         }
     },
     "autoload-dev": {
